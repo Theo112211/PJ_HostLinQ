@@ -1,0 +1,97 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 33% 98%;
+    --foreground: 200 50% 3%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 50% 3%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 50% 3%;
+
+    --primary: 185 87% 37%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 14 100% 70%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 185 87% 94%;
+    --accent-foreground: 185 87% 37%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 185 87% 37%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 200 50% 13%;
+    --foreground: 210 40% 98%;
+
+    --card: 200 50% 16%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 200 50% 16%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 185 87% 40%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 14 100% 65%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 185 87% 20%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 185 87% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .contact-button {
+    @apply inline-flex items-center gap-2 rounded-md px-4 py-2 
+    transition-colors duration-200 ease-in-out;
+  }
+}

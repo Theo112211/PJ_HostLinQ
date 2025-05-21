@@ -55,6 +55,6 @@ Built with a powerful modern tech stack, Hostlinq is optimized for speed, user e
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/hostlinq.git
+git clone https://github.com/Theo112211/PJ_HostLinQ.git
 cd hostlinq
 # PJ_HostLinQ
